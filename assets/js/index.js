@@ -48,11 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. 360° PRODUCT VIEWER LOGIC (WITH DRAG-TO-ROTATE SUPPORT)
     const views360 = [
-        { src: 'jacket_views/jacket_right.png', label: 'Right Side View' },
-        { src: 'jacket_views/jacket_front.png', label: 'Front View' },
-        { src: 'jacket_views/jacket_inside.png', label: 'Inside Structure (Heating & Cooling)' },
-        { src: 'jacket_views/jacket_left.png', label: 'Left Side View' },
-        { src: 'jacket_views/jacket_back.png', label: 'Back View' }
+        { src: 'assets/images/jackets/360_views/jacket_right.png', label: 'Right Side View' },
+        { src: 'assets/images/jackets/360_views/jacket_front.png', label: 'Front View' },
+        { src: 'assets/images/jackets/360_views/jacket_inside.png', label: 'Inside Structure (Heating & Cooling)' },
+        { src: 'assets/images/jackets/360_views/jacket_left.png', label: 'Left Side View' },
+        { src: 'assets/images/jackets/360_views/jacket_back.png', label: 'Back View' }
     ];
     
     // Preload all 360° views on load to ensure instant, smooth rotation without blinking
