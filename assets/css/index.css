@@ -1377,6 +1377,17 @@ img {
     margin-bottom: 15px;
 }
 
+.comp-icon-img {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    background-color: white;
+    padding: 5px;
+}
+
 .component-card h3 {
     font-size: 16px;
     margin-bottom: 6px;
