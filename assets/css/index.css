@@ -3586,4 +3586,85 @@ p.section-desc {
     }
 }
 
+/* ============================================
+   NEWSLETTER SUBSCRIPTION SUCCESS MODAL
+   ============================================ */
+.subscribe-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 5000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+}
 
+.subscribe-modal.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.subscribe-modal-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 48px 40px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 90, 0, 0.08);
+    transform: translateY(20px) scale(0.97);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.subscribe-modal.active .subscribe-modal-card {
+    transform: translateY(0) scale(1);
+}
+
+.subscribe-modal-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255, 90, 0, 0.1), rgba(255, 90, 0, 0.05));
+    border: 2px solid rgba(255, 90, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    font-size: 28px;
+    color: var(--color-orange);
+    animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes popIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to   { transform: scale(1);   opacity: 1; }
+}
+
+.subscribe-modal-card h3 {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.subscribe-modal-card p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+    margin-bottom: 28px;
+}
+
+.subscribe-modal-close {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+}

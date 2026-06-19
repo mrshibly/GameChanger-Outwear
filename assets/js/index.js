@@ -853,3 +853,34 @@ function initParticles() {
     
     animate();
 }
+
+// NEWSLETTER SUBSCRIPTION MODAL
+(function () {
+    const form = document.getElementById('newsletter-form');
+    const modal = document.getElementById('subscribe-modal');
+    const closeBtn = document.getElementById('subscribe-modal-close');
+
+    if (!form || !modal || !closeBtn) return;
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        modal.classList.add('active');
+        form.reset();
+    });
+
+    function closeModal() {
+        modal.classList.remove('active');
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+
+    // Also close on backdrop click
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+    });
+})();

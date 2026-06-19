@@ -1094,7 +1094,7 @@
                     <h4 class="footer-heading">Stay Updated</h4>
                     <div class="footer-newsletter">
                         <p>Subscribe for exclusive drops, early access, and tech updates.</p>
-                        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+                        <form class="newsletter-form" id="newsletter-form">
                             <input type="email" placeholder="Email Address" required>
                             <button type="submit">Join</button>
                         </form>
@@ -1130,6 +1130,18 @@
     <button class="back-to-top" id="btn-back-to-top" aria-label="Back to top">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
+
+    <!-- Newsletter Success Modal -->
+    <div class="subscribe-modal" id="subscribe-modal">
+        <div class="subscribe-modal-card">
+            <div class="subscribe-modal-icon">
+                <i class="fa-solid fa-envelope-circle-check"></i>
+            </div>
+            <h3>You're on the list!</h3>
+            <p>Thanks for subscribing. You'll be the first to know about exclusive drops, early access, and tech updates.</p>
+            <button class="btn btn-primary subscribe-modal-close" id="subscribe-modal-close">Got it!</button>
+        </div>
+    </div>
 
     <!-- Custom JavaScript -->
     <script src="assets/js/index.js"></script>
