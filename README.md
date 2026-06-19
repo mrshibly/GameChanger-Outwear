@@ -8,7 +8,7 @@ A premium, fully responsive product website for the **THI-THU V1** — the world
 
 ---
 
-![Game Changer Hero Screenshot](assets/images/hero_mountain_bg.png)
+![Game Changer Hero Screenshot](assets/images/readme_preview.png)
 
 ---
 
