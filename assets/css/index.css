@@ -2962,7 +2962,20 @@ img {
     /* === THERMO-TECH === */
     .thermo-split-container { height: 320px; }
     .temp-slider-row { flex-direction: column; gap: 15px; }
-    .state-indicator { position: static; margin: 10px auto 0; display: inline-block; }
+
+    /* Fix state indicator badges — reposition inside container on mobile */
+    .state-indicator {
+        position: absolute;
+        bottom: 8px;
+    }
+    .cold-indicator {
+        left: 8px;
+        right: auto;
+    }
+    .hot-indicator {
+        right: 8px;
+        left: auto;
+    }
 
     /* === WORKFLOW === */
     .workflow-stepper { grid-template-columns: 1fr; gap: 30px; }
